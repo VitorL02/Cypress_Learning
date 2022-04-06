@@ -1,3 +1,5 @@
+/// <reference types= "cypress"/>
+
 describe('Basico do Cypress', ()=>{
     it.only('Access a page and make a assert in title',()=>{
 
