@@ -16,4 +16,14 @@ describe('Basico de links ',() => {
         cy.get('#resultado').should('have.text','Voltou!');
         cy.get('#resultado').should('contain','Voltou');
     });
+
+    it('Textos',()=>{
+
+        cy.get('body').should('contain', 'Cuidado');
+        
+        cy.get('.facilAchar').should('contain','Cuidado');
+    
+        cy.get('.facilAchar').should('have.text','Cuidado onde clica, muitas armadilhas...');
+    
+        });
 });
